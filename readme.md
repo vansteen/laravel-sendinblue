@@ -1,21 +1,83 @@
-# Sendinblue
+# Laravel Sendinblue
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+The package simply provides a Laravel 5 service provider, facade and config file for the SendinBlue's API v3 official PHP library. https://github.com/sendinblue/APIv3-php-library
 
 ## Installation
 
-Via Composer
+You can install this package via Composer using:
 
 ``` bash
-$ composer require vansteen/sendinblue
+$ composer require vansteen/laravel-sendinblue
+```
+
+For Laravel <5.5, you must also install the service provider and the facade to your `config/app.php`:
+
+```php
+// config/app.php
+'providers' => [
+    ...
+    Vansteen\Sendinblue\SendinblueServiceProvider::class,
+    ...
+];
+```
+
+```php
+// config/app.php
+'aliases' => [
+    ...
+    'Sendinblue' => Vansteen\Sendinblue\Facades\Sendinblue::class,
+];
+```
+
+
+## Configuration
+
+You need to publish the config file to `app/config/sendinblue.php`. Run:
+
+```bash
+php artisan vendor:publish --provider="Vansteen\Sendinblue\SendinblueServiceProvider"
+```
+
+Now you need to set your configuration using **environment variables**.
+Go the the Sendinblue API settings and add the v3 API key to your `.env` file.
+
+```bash
+SENDINBLUE_APIKEY=xkeysib-XXXXXXXXXXXXXXXXXXX
 ```
 
 ## Usage
+
+
+```php
+// routes.php
+...
+use Vansteen\Sendinblue\Facades\Sendinblue;
+
+Route::get('/test', function () {
+
+    $config = Sendinblue::getConfiguration();
+
+    $apiInstance = new \SendinBlue\Client\Api\ListsApi(
+        // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+        // This is optional, `GuzzleHttp\Client` will be used as default.
+        new GuzzleHttp\Client(),
+        $config
+    );
+
+    try {
+        $result = $apiInstance->getLists();
+        dd($result);
+    } catch (Exception $e) {
+        echo 'Exception when calling AccountApi->getAccount: ', $e->getMessage(), PHP_EOL;
+    }
+
+});
+```
 
 ## Change log
 
@@ -34,11 +96,6 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 ## Security
 
 If you discover any security related issues, please email author email instead of using the issue tracker.
-
-## Credits
-
-- [author name][link-author]
-- [All Contributors][link-contributors]
 
 ## License
 
