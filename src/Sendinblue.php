@@ -56,40 +56,6 @@ class Sendinblue
      */
     public function setConfiguration(Configuration $configuration)
     {
-        return $this->configuration = $configuration;
-    }
-
-    /**
-     * Pass any method calls onto $this->configuration.
-     *
-     * @param string $method The name of the method being called.
-     * @param array $arguments An enumerated array containing the parameters.
-     *
-     * @return mixed
-     */
-    public function __call($method, $arguments)
-    {
-        if (is_callable([$this->configuration, $method])) {
-            return call_user_func_array([$this->configuration, $method], $arguments);
-        } else {
-            throw new BadMethodCallException("Method $method does not exist");
-        }
-    }
-
-    /**
-     * Pass any static method calls onto $this->configuration.
-     *
-     * @param string $method The name of the method being called.
-     * @param array $arguments An enumerated array containing the parameters.
-     *
-     * @return mixed
-     */
-    public static function __callStatic($method, $arguments)
-    {
-        if (is_callable([$this->configuration, $method])) {
-            return call_user_func_array([$this->configuration, $method], $arguments);
-        } else {
-            throw new BadMethodCallException("Method $method does not exist");
-        }
+        $this->configuration = $configuration;
     }
 }
