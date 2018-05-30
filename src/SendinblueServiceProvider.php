@@ -40,7 +40,7 @@ class SendinblueServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/sendinblue.php', 'sendinblue');
 
         // Register the service the package provides.
-        $this->app->singleton('sendinblue', function ($app) {
+        $this->app->singleton('sendinblue', function () {
             return new Sendinblue;
         });
     }
