@@ -2,27 +2,26 @@
 
 namespace Vansteen\Sendinblue;
 
-use SendinBlue\Client\Configuration;
 use BadMethodCallException;
+use SendinBlue\Client\Configuration;
 
 /**
- * Wrapper for the Sendinblue's Configuration class
+ * Wrapper for the Sendinblue's Configuration class.
  *
  * @category Class
- * @package  Vansteen\Sendinblue
  * @author   Thomas Van Steenwinckel
  * @link     https://github.com/vansteen/sendinblue
  */
 class Sendinblue
 {
     /**
-     * An instance of the Sendinblue's Configuration class
+     * An instance of the Sendinblue's Configuration class.
      * @var \SendinBlue\Client\Configuration
      */
     protected $configuration;
 
     /**
-     * Constructor
+     * Constructor.
      */
     public function __construct()
     {
@@ -39,7 +38,7 @@ class Sendinblue
     }
 
     /**
-     * Gets the default configuration instance
+     * Gets the default configuration instance.
      *
      * @return \SendinBlue\Client\Configuration
      */
@@ -49,7 +48,7 @@ class Sendinblue
     }
 
     /**
-     * Sets the detault configuration instance
+     * Sets the detault configuration instance.
      *
      * @param \SendinBlue\Client\Configuration $configuration An instance of the Configuration Object
      *
@@ -61,7 +60,7 @@ class Sendinblue
     }
 
     /**
-     * Pass any method calls onto $this->configuration
+     * Pass any method calls onto $this->configuration.
      *
      * @param string $method The name of the method being called.
      * @param array $arguments An enumerated array containing the parameters.
@@ -78,7 +77,7 @@ class Sendinblue
     }
 
     /**
-     * Pass any static method calls onto $this->configuration
+     * Pass any static method calls onto $this->configuration.
      *
      * @param string $method The name of the method being called.
      * @param array $arguments An enumerated array containing the parameters.
