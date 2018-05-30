@@ -2,15 +2,14 @@
 
 namespace Vansteen\Sendinblue\Tests;
 
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Vansteen\Sendinblue\SendinblueServiceProvider;
 use Vansteen\Sendinblue\Facades\Sendinblue;
+use Vansteen\Sendinblue\SendinblueServiceProvider;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 /**
  * This is the abstract test case class.
  *
  * @category Class
- * @package  Vansteen\Sendinblue
  * @author   Thomas Van Steenwinckel
  * @link     https://github.com/vansteen/sendinblue
  */
@@ -49,7 +48,7 @@ class TestCase extends OrchestraTestCase
     protected function getPackageAliases($app)
     {
         return [
-            'Sendinblue' => Sendinblue::class
+            'Sendinblue' => Sendinblue::class,
         ];
     }
 
