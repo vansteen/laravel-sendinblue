@@ -3,6 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
+[![Quality Score][ico-code-quality]][link-code-quality]
 [![StyleCI][ico-styleci]][link-styleci]
 
 The package simply provides a Laravel 5 service provider, facade and config file for the SendinBlue's API v3 official PHP library. https://github.com/sendinblue/APIv3-php-library
@@ -106,14 +107,16 @@ If you discover any security related issues, please email author email instead o
 
 license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/vansteen/laravel-sendinblue.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/vansteen/laravel-sendinblue.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/vansteen/laravel-sendinblue/master.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/vansteen/laravel-sendinblue.svg?longCache=true&style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/vansteen/laravel-sendinblue.svg?longCache=true&style=flat-square
+[ico-travis]: https://img.shields.io/travis/vansteen/laravel-sendinblue/master.svg?longCache=true&style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/vansteen/laravel-sendinblue.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/134865450/shield
 
 [link-packagist]: https://packagist.org/packages/vansteen/laravel-sendinblue
 [link-downloads]: https://packagist.org/packages/vansteen/laravel-sendinblue
 [link-travis]: https://travis-ci.org/vansteen/laravel-sendinblue
+[link-code-quality]: https://scrutinizer-ci.com/g/vansteen/laravel-sendinblue
 [link-styleci]: https://styleci.io/repos/134865450
 [link-author]: https://github.com/vansteen
 [link-contributors]: ../../contributors]
