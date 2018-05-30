@@ -79,6 +79,11 @@ Route::get('/test', function () {
 });
 ```
 
+To get a idea of the of the API endpoints, visit the API [readme file](https://github.com/sendinblue/APIv3-php-library).
+
+Be sure to visit the SendinBlue official [documentation website](https://sendinblue.readme.io/docs) for additional information about our API.
+
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
