@@ -106,14 +106,14 @@ If you discover any security related issues, please email author email instead o
 
 license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/vansteen/sendinblue.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/vansteen/sendinblue.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/vansteen/sendinblue/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-version]: https://img.shields.io/packagist/v/vansteen/laravel-sendinblue.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/vansteen/laravel-sendinblue.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/vansteen/laravel-sendinblue/master.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/134865450/shield
 
-[link-packagist]: https://packagist.org/packages/vansteen/sendinblue
-[link-downloads]: https://packagist.org/packages/vansteen/sendinblue
-[link-travis]: https://travis-ci.org/vansteen/sendinblue
-[link-styleci]: https://styleci.io/repos/12345678
+[link-packagist]: https://packagist.org/packages/vansteen/laravel-sendinblue
+[link-downloads]: https://packagist.org/packages/vansteen/laravel-sendinblue
+[link-travis]: https://travis-ci.org/vansteen/laravel-sendinblue
+[link-styleci]: https://styleci.io/repos/134865450
 [link-author]: https://github.com/vansteen
 [link-contributors]: ../../contributors]
