@@ -6,9 +6,16 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![StyleCI][ico-styleci]][link-styleci]
 
-The package simply provides a Laravel 5 service provider, facade and config file for the SendinBlue's API v3 official PHP library. https://github.com/sendinblue/APIv3-php-library
+The package simply provides a Laravel service provider, facade and config file for the SendinBlue's API v3 official PHP library. https://github.com/sendinblue/APIv3-php-library
 
 ## Installation
+
+Only the master branch and version 1 of this package are compatible with Laravel 6.0. If you're still using an older version of Laravel, please use the chart below to find out which version you should use. Mind that older versions are no longer supported.
+
+| Laravel Version | Package Version |
+|-----------------|-----------------|
+| 6.0             | 1               |
+| 5.x             | 0.4             |
 
 You can install this package via Composer using:
 
