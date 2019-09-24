@@ -2,7 +2,10 @@
     "name": "vansteen/laravel-sendinblue",
     "type": "library",
     "description": "Provides a Laravel 5 service provider, facade and config file for the SendinBlue's API v3 official PHP library.",
-    "keywords": ["Laravel", "Sendinblue"],
+    "keywords": [
+        "Laravel",
+        "Sendinblue"
+    ],
     "homepage": "https://github.com/vansteen/laravel-sendinblue",
     "license": "MIT",
     "authors": [
@@ -20,7 +23,7 @@
         }
     ],
     "require": {
-        "illuminate/support": "~5",
+        "illuminate/support": "^6.0",
         "sendinblue/api-v3-sdk": "*"
     },
     "require-dev": {
