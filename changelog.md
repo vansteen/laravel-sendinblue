@@ -6,6 +6,8 @@ All notable changes to `Sendinblue` will be documented in this file.
 
 ### Added
 - Support for Laravel 6
+- Add the partner key to the config file
+- Remove the prefix key from the config file
 
 ## Version 0.4
 

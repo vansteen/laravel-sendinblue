@@ -68,7 +68,12 @@ use Vansteen\Sendinblue\Facades\Sendinblue;
 
 Route::get('/test', function () {
 
+    // Configure API keys authorization according to the config file
     $config = Sendinblue::getConfiguration();
+
+    // Uncomment below to setup prefix (e.g. Bearer) for API keys, if needed
+    // $config->setApiKeyPrefix('api-key', 'Bearer');
+    // $config->setApiKeyPrefix('partner-key', 'Bearer');
 
     $apiInstance = new \SendinBlue\Client\Api\ListsApi(
         // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.

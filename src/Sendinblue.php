@@ -25,14 +25,15 @@ class Sendinblue
     public function __construct()
     {
         $apikey = config('sendinblue.apikey');
-        $prefix = config('sendinblue.prefix');
+        $partnerkey = config('sendinblue.partnerkey');
 
         // Configure API key authorization: api-key
         $this->configuration = Configuration::getDefaultConfiguration()->setApiKey('api-key', $apikey);
 
-        if ($prefix) {
-            // Setup prefix (e.g. Bearer) for API key, if needed
-            $this->configuration->setApiKeyPrefix('api-key', $prefix);
+        if ($partnerkey) {
+            // (Optional) The partner key should be passed in the request headers as
+            // partner-key along with api-key pair for successful authentication of partner.
+            $this->configuration->setApiKey('partner-key', $partnerkey);
         }
     }
 

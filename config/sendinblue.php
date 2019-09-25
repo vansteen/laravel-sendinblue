@@ -13,5 +13,5 @@ return [
      *
      */
     'apikey' => env('SENDINBLUE_APIKEY', null),
-    'prefix' => env('SENDINBLUE_PREFIX', null),
+    'partnerkey' => env('SENDINBLUE_PARTNERKEY', null),
 ];
