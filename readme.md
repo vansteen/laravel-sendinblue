@@ -10,18 +10,18 @@ The package simply provides a Laravel service provider, facade and config file f
 
 ## Installation
 
-Only the master branch and version 1 of this package are compatible with Laravel 6.0. If you're still using an older version of Laravel, please use the chart below to find out which version you should use. Mind that older versions are no longer supported.
-
-| Laravel Version | Package Version |
-|-----------------|-----------------|
-| 6.0             | 1               |
-| 5.x             | 0.4             |
-
 You can install this package via Composer using:
 
 ``` bash
 $ composer require vansteen/laravel-sendinblue
 ```
+
+Only the master branch and version 1 of this package are compatible with Laravel >=6.0. If you're still using an older version of Laravel, please use the chart below to find out which version you should use. Mind that older versions are no longer supported.
+
+| Laravel Version | Package Version |
+|-----------------|-----------------|
+| >=6             | ~1              |
+| 5.x             | 0.4             |
 
 For Laravel <5.5, you must also install the service provider and the facade to your `config/app.php`:
 

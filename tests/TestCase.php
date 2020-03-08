@@ -2,9 +2,9 @@
 
 namespace Vansteen\Sendinblue\Tests;
 
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Vansteen\Sendinblue\Facades\Sendinblue;
 use Vansteen\Sendinblue\SendinblueServiceProvider;
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 /**
  * This is the abstract test case class.
