@@ -1,7 +1,7 @@
 {
     "name": "vansteen/laravel-sendinblue",
     "type": "library",
-    "description": "Provides a Laravel 5/6 service provider, facade and config file for the SendinBlue's API v3 official PHP library.",
+    "description": "A Laravel 5/6/7 service provider, facade and config file for the SendinBlue's API v3 official PHP library.",
     "keywords": [
         "laravel",
         "sendinblue"

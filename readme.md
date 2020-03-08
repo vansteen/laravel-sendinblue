@@ -8,6 +8,7 @@
 
 The package simply provides a Laravel service provider, facade and config file for the SendinBlue's API v3 official PHP library. https://github.com/sendinblue/APIv3-php-library
 
+
 ## Installation
 
 You can install this package via Composer using:
@@ -15,13 +16,6 @@ You can install this package via Composer using:
 ``` bash
 $ composer require vansteen/laravel-sendinblue
 ```
-
-Only the master branch and version 1 of this package are compatible with Laravel >=6.0. If you're still using an older version of Laravel, please use the chart below to find out which version you should use. Mind that older versions are no longer supported.
-
-| Laravel Version | Package Version |
-|-----------------|-----------------|
-| >=6             | ~1              |
-| 5.x             | 0.4             |
 
 For Laravel <5.5, you must also install the service provider and the facade to your `config/app.php`:
 
@@ -45,7 +39,7 @@ For Laravel <5.5, you must also install the service provider and the facade to y
 
 ## Configuration
 
-You need to publish the config file to `app/config/sendinblue.php`. Run:
+You need to publish the config file to `app/config/sendinblue.php`. To do so, run:
 
 ```bash
 php artisan vendor:publish --provider="Vansteen\Sendinblue\SendinblueServiceProvider"
@@ -58,8 +52,10 @@ Go the the Sendinblue API settings and add the v3 API key to your `.env` file.
 SENDINBLUE_APIKEY=xkeysib-XXXXXXXXXXXXXXXXXXX
 ```
 
+
 ## Usage
 
+To test it, you can add the folowing code in routes.php.
 
 ```php
 // routes.php
@@ -92,7 +88,7 @@ Route::get('/test', function () {
 });
 ```
 
-To get a idea of the of the API endpoints, visit the API [readme file](https://github.com/sendinblue/APIv3-php-library).
+To get a idea of the of the API endpoints, visit the API [readme file](https://github.com/sendinblue/APIv3-php-library#documentation-for-api-endpoints).
 
 Be sure to visit the SendinBlue official [documentation website](https://sendinblue.readme.io/docs) for additional information about our API.
 
@@ -101,19 +97,23 @@ Be sure to visit the SendinBlue official [documentation website](https://sendinb
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
+
 ## Testing
 
 ``` bash
 $ composer test
 ```
 
+
 ## Contributing
 
 Please see [contributing.md](contributing.md) for details and a todolist.
 
+
 ## Security
 
 If you discover any security related issues, please email author email instead of using the issue tracker.
+
 
 ## License
 
