@@ -3,6 +3,7 @@
 namespace Vansteen\Sendinblue\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use SendinBlue\Client\Configuration;
 use Vansteen\Sendinblue\Facades\Sendinblue;
 use Vansteen\Sendinblue\SendinblueServiceProvider;
 
@@ -22,8 +23,8 @@ class TestCase extends OrchestraTestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        config(['sendinblue.apikey' => 'test_signing_secret']);
-        config(['sendinblue.prefix' => null]);
+        config(['sendinblue.apikey' => 'test_apikey']);
+        config(['sendinblue.partnerkey' => 'test_partnerkey']);
     }
 
     /**
@@ -56,5 +57,20 @@ class TestCase extends OrchestraTestCase
     {
         $config = Sendinblue::getConfiguration();
         $this->assertEquals(\SendinBlue\Client\Configuration::class, get_class($config));
+    }
+
+    public function testSetConfigurationisDone()
+    {
+        $config = new Configuration();
+        $sendinblue = new Sendinblue();
+        $sendinblue::setConfiguration($config);
+        $this->assertEquals($config, $sendinblue::getConfiguration());
+    }
+
+    public function testKeysAreSet()
+    {
+        $config = Sendinblue::getConfiguration();
+        $this->assertEquals($config->getApiKey('api-key'), config('sendinblue.apikey'));
+        $this->assertEquals($config->getApiKey('partner-key'), config('sendinblue.partnerkey'));
     }
 }
