@@ -8,15 +8,14 @@
 [![StyleCI][ico-styleci]][link-styleci]
 [![License][ico-license]][link-license]
 
-The package simply provides a Laravel service provider, facade and config file for the SendinBlue's API v3 official PHP library. https://github.com/sendinblue/APIv3-php-library
-
+The package simply provides a Laravel service provider, facade and config file for the SendinBlue's API v3 official PHP library. <https://github.com/sendinblue/APIv3-php-library>
 
 ## Installation
 
 You can install this package via Composer using:
 
-``` bash
-$ composer require vansteen/laravel-sendinblue
+```bash
+composer require vansteen/laravel-sendinblue
 ```
 
 For Laravel <5.5, you must also install the service provider and the facade to your `config/app.php`:
@@ -38,13 +37,12 @@ For Laravel <5.5, you must also install the service provider and the facade to y
 ];
 ```
 
-
 ## Configuration
 
 You need to publish the config file to `app/config/sendinblue.php`. To do so, run:
 
 ```bash
-php artisan vendor:publish --provider="Vansteen\Sendinblue\SendinblueServiceProvider"
+php artisan vendor:publish --tag=sendinblue.config
 ```
 
 Now you need to set your configuration using **environment variables**.
@@ -53,7 +51,6 @@ Go the the Sendinblue API settings and add the v3 API key to your `.env` file.
 ```bash
 SENDINBLUE_APIKEY=xkeysib-XXXXXXXXXXXXXXXXXXX
 ```
-
 
 ## Usage
 
@@ -94,28 +91,23 @@ To get a idea of the of the API endpoints, visit the API [readme file](https://g
 
 Be sure to visit the SendinBlue official [documentation website](https://sendinblue.readme.io/docs) for additional information about our API.
 
-
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
-
 ## Testing
 
-``` bash
-$ composer test
+```bash
+composer test
 ```
-
 
 ## Contributing
 
 Please see [contributing.md](contributing.md) for details and a todolist.
 
-
 ## Security
 
 If you discover any security related issues, please email author email instead of using the issue tracker.
-
 
 ## License
 
@@ -128,7 +120,6 @@ license. Please see the [license file](license.md) for more information.
 [ico-code-quality]: https://scrutinizer-ci.com/g/vansteen/laravel-sendinblue/badges/quality-score.png?b=master
 [ico-styleci]: https://github.styleci.io/repos/134865450/shield?style=flat
 [ico-license]: https://poser.pugx.org/vansteen/laravel-sendinblue/license
-
 [link-packagist]: https://packagist.org/packages/vansteen/laravel-sendinblue
 [link-downloads]: https://packagist.org/packages/vansteen/laravel-sendinblue
 [link-travis]: https://travis-ci.org/vansteen/laravel-sendinblue
