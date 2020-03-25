@@ -1,58 +1,52 @@
 {
-    "name": "vansteen/laravel-sendinblue",
-    "type": "library",
-    "description": "A Laravel 5/6/7 service provider, facade and config file for the SendinBlue's API v3 official PHP library.",
-    "keywords": [
-        "laravel",
-        "sendinblue"
-    ],
-    "homepage": "https://github.com/vansteen/laravel-sendinblue",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Thomas Van Steenwinckel",
-            "email": "code@1234.pm",
-            "homepage": "https://github.com/vansteen",
-            "role": "Developer"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/sendinblue/APIv3-php-library.git"
-        }
-    ],
-    "require": {
-        "illuminate/support": "~5|^6.0|^7.0",
-        "sendinblue/api-v3-sdk": "^6.1.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~5.7|^8.0|^9.0",
-        "orchestra/testbench": "~3.0|^4.0|^5.0",
-        "php-coveralls/php-coveralls": "^2.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "Vansteen\\Sendinblue\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Vansteen\\Sendinblue\\Tests\\": "tests"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Vansteen\\Sendinblue\\SendinblueServiceProvider"
-            ],
-            "aliases": {
-                "Sendinblue": "Vansteen\\Sendinblue\\Facades\\Sendinblue"
-            }
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
-    },
-    "minimum-stability": "stable"
+  "name": "vansteen/laravel-sendinblue",
+  "type": "library",
+  "description": "A Laravel 5/6/7 service provider, facade and config file for the SendinBlue's API v3 official PHP library.",
+  "keywords": [
+    "laravel",
+    "sendinblue"
+  ],
+  "homepage": "https://github.com/vansteen/laravel-sendinblue",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Van Steenwinckel",
+      "email": "code@1234.pm",
+      "homepage": "https://github.com/vansteen",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "illuminate/support": "~5|^6.0|^7.0",
+    "sendinblue/api-v3-sdk": "^6.1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.7|^8.0|^9.0",
+    "orchestra/testbench": "~3.0|^4.0|^5.0",
+    "php-coveralls/php-coveralls": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vansteen\\Sendinblue\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vansteen\\Sendinblue\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Vansteen\\Sendinblue\\SendinblueServiceProvider"
+      ],
+      "aliases": {
+        "Sendinblue": "Vansteen\\Sendinblue\\Facades\\Sendinblue"
+      }
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "minimum-stability": "stable"
 }
