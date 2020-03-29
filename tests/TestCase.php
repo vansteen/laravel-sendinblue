@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * @package    Vansteen\Sendinblue
+ * @author     Thomas Van Steenwinckel <code@1234.pm>
+ * @link       https://github.com/vansteen/laravel-sendinblue
+ * @license    https://github.com/vansteen/laravel-sendinblue/blob/master/license.md (MIT License)
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Vansteen\Sendinblue\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
@@ -56,7 +66,7 @@ class TestCase extends OrchestraTestCase
     public function testGetConfigurationisSendinBlueClient()
     {
         $config = Sendinblue::getConfiguration();
-        $this->assertEquals(\SendinBlue\Client\Configuration::class, get_class($config));
+        $this->assertEquals(\SendinBlue\Client\Configuration::class, \get_class($config));
     }
 
     public function testSetConfigurationisDone()

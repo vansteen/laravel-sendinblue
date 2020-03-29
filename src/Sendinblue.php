@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * @package    Vansteen\Sendinblue
+ * @author     Thomas Van Steenwinckel <code@1234.pm>
+ * @link       https://github.com/vansteen/laravel-sendinblue
+ * @license    https://github.com/vansteen/laravel-sendinblue/blob/master/license.md (MIT License)
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Vansteen\Sendinblue;
 
 use SendinBlue\Client\Configuration;
@@ -51,8 +61,6 @@ class Sendinblue
      * Sets the detault configuration instance.
      *
      * @param \SendinBlue\Client\Configuration $configuration An instance of the Configuration Object
-     *
-     * @return void
      */
     public function setConfiguration(Configuration $configuration)
     {
